@@ -18128,7 +18128,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 .banner-one .swiper-wrapper .swiper-slide.three {
   background-image: url(../images/hero_img.png);
-  background-size:100% 100%;
+  background-size: 100% 100%;
 }
 @media (max-width:768px) {
   .banner-one .swiper-wrapper .swiper-slide.three {
