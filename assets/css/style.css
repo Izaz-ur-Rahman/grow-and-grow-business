@@ -674,7 +674,7 @@ ol ul {
 }
 
 .rts-section-gap {
-  padding: 120px 0;
+  padding: 86px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap {
@@ -702,7 +702,7 @@ ol ul {
 }
 
 .rts-section-gapTop {
-  padding-top: 120px;
+  padding-top: 86px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapTop {
