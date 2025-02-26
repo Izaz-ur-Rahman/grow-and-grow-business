@@ -15398,7 +15398,7 @@ body.sal-disabled [data-sal|=flip] {
   margin-right: 36px;
 }
 .main-header .nav-main ul li a {
-  padding: 32px 0;
+  padding: 30px 0;
   display: block;
   color: #1C2539;
   font-size: 16px;
@@ -15411,7 +15411,7 @@ body.sal-disabled [data-sal|=flip] {
   position: absolute;
   content: "";
   left: 0;
-  bottom: 34px;
+  bottom: 30px;
   height: 2px;
   width: 0%;
   border-radius: 1px;
