@@ -17409,7 +17409,8 @@ body.home-eleven #menu-btn:hover {
 
 /* elements style hear  */
 .rts-btn {
-  padding: 17px 30px;
+  /* padding: 17px 30px; */
+  padding: 10px 17px;
   min-width: max-content;
   font-size: 16px;
   line-height: 21px;
@@ -17785,7 +17786,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 
 #menu-btn {
   background: var(--color-primary-alta);
-  height: 55px;
+  height: 45px;
   width: 55px;
   padding: 17px;
   display: flex;
