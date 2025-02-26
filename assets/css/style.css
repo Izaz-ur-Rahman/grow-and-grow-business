@@ -15698,15 +15698,29 @@ body.sal-disabled [data-sal|=flip] {
   .header-three .main-header-three .right {
     margin-right: 30px;
   }
+  .desktop-logo{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 @media only screen and (max-width: 1199px) {
   .header-three .main-header-three .right {
     margin-right: 15px;
   }
+  .main-header{
+    justify-content: end;
+  }
 }
 @media only screen and (max-width: 479px) {
   .header-three .main-header-three .right {
     margin-right: 5px;
+  }
+}
+@media (min-width:) and (min-width: 479px) {
+  .main-header{
+    justify-content: end;
   }
 }
 @media only screen and (max-width: 479px) {
