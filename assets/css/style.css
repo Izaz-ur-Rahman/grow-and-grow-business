@@ -10900,7 +10900,7 @@ body {
 }
 .rts-title-area::after {
   position: absolute;
-  content: "About Us";
+ content: "";   /*  about us */
   left: -14%;
   top: -70%;
   color: #ffffff;
@@ -10958,12 +10958,12 @@ body {
   margin-bottom: 24px;
 }
 .rts-title-area.service::after {
-  content: "Services";
+  /* content: "Services"; */
   left: 50%;
   transform: translateX(-50%);
 }
 .rts-title-area.pricing-planes::after {
-  content: "price plans";
+  /* content: "price plans"; */
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
@@ -10971,13 +10971,13 @@ body {
   top: -70%;
 }
 .rts-title-area.service-four::after {
-  content: "Services";
+  /* content: "Services"; */
   left: 50%;
   transform: translateX(-50%);
   top: -20%;
 }
 .rts-title-area.business::after {
-  content: "Business Goal";
+  content: "";  /*  Business Goal */
   min-width: max-content;
   min-height: 120px;
   left: 67%;
@@ -10985,27 +10985,27 @@ body {
   z-index: -1;
 }
 .rts-title-area.gallery::after {
-  content: "Gallery";
+  /* content: "Gallery"; */
   left: 18%;
   transform: translateX(-50%);
   z-index: -1;
 }
 .rts-title-area.team::after {
-  content: "Members";
+  /* content: "Members"; */
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;
   height: 109px;
 }
 .rts-title-area.feedback::after {
-  content: "Testimonial";
+  /* content: "Testimonial"; */
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;
   height: 109px;
 }
 .rts-title-area.feature::after {
-  content: "Features";
+  /* content: "Features"; */
   left: 32%;
   transform: translateX(-50%);
   z-index: -1;
@@ -11019,7 +11019,7 @@ body {
   }
 }
 .rts-title-area.reviews::after {
-  content: "Reviews";
+  /* content: "Reviews"; */
   left: 32%;
   transform: translateX(-50%);
   z-index: -1;
@@ -11027,7 +11027,7 @@ body {
   top: 2%;
 }
 .rts-title-area.contact::after {
-  content: "Hello";
+  /* content: "Hello"; */
   left: 52%;
   transform: translateX(-50%);
   z-index: -1;
@@ -11036,7 +11036,7 @@ body {
 }
 .rts-title-area.contact-appoinment::after {
   position: absolute;
-  content: "Hello";
+  /* content: "Hello"; */
   left: 18%;
   top: -39%;
   color: #8b868600;
@@ -11061,7 +11061,7 @@ body {
   }
 }
 .rts-title-area.contact-fluid::after {
-  content: "Contact Us";
+  /* content: "Contact Us"; */
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;
