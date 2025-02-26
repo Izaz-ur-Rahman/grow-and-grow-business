@@ -15398,7 +15398,7 @@ body.sal-disabled [data-sal|=flip] {
   margin-right: 36px;
 }
 .main-header .nav-main ul li a {
-  padding: 48px 0;
+  padding: 32px 0;
   display: block;
   color: #1C2539;
   font-size: 16px;
@@ -15411,7 +15411,7 @@ body.sal-disabled [data-sal|=flip] {
   position: absolute;
   content: "";
   left: 0;
-  bottom: 50px;
+  bottom: 34px;
   height: 2px;
   width: 0%;
   border-radius: 1px;
@@ -15443,6 +15443,9 @@ body.sal-disabled [data-sal|=flip] {
 @media only screen and (max-width: 479px) {
   .main-header .button-area {
     margin: 10px 0;
+  }
+  .main-header{
+    justify-content: end;
   }
 }
 .main-header .button-area button.menu .menu-dark {
