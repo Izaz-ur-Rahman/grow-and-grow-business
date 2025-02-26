@@ -688,7 +688,7 @@ ol ul {
 }
 
 .rts-section-gapBottom {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapBottom {
@@ -1692,7 +1692,7 @@ ol ul {
 }
 
 .mt--120 {
-  margin-top: 120px !important;
+  margin-top: 70px !important;
 }
 
 .mb--120 {
