@@ -33562,7 +33562,7 @@ p.disc {
   margin-right: 10px;
 }
 .footer-two-single-wized .wized-2-body ul li a:hover {
-  color: var(--color-primary-2);
+  color: #D7282F !important;
 }
 .footer-two-single-wized .contact-info-1 {
   display: flex;
