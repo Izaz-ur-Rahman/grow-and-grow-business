@@ -24318,7 +24318,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 @media only screen and (max-width: 575px) {
   .business-goal-one img.small {
-    width: 50%;
+    width: 100%;
     top: 37%;
   }
 }
@@ -24796,6 +24796,9 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 @media (max-width: 400px) {
   .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape1 {
     width: 30px;
+  }
+  .business-goal-one img{
+    width: 100%;
   }
 }
 .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape2 {
@@ -27783,6 +27786,10 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   .bg-white-feature {
     padding: 0 30px !important;
   }
+  .feature-left-area {
+    padding-right: 0px;
+
+  }
 }
 @media only screen and (max-width: 575px) {
   .bg-white-feature {
@@ -27816,6 +27823,9 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   .feature-title {
     font-size: 30px;
   }
+  .business-goal-one img{
+    width: 80%;
+    }
 }
 
 .feature-one-wrapper {
