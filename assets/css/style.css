@@ -27823,9 +27823,30 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   .feature-title {
     font-size: 30px;
   }
-  .business-goal-one img{
-    width: 80%;
-    }
+
+}
+/* Hide the second image on small screens */
+
+/* Hide the second image on small screens */
+@media (max-width: 768px) {
+  .img_remove_in_mbl{
+      display: none;
+  }
+  .business-goal-one img.small {
+     position: relative;
+    top: 9%;
+    transform: translateY(-50%);
+    right: 2%;
+    animation: jump-2 5slinear infinite;
+    z-index: 7;
+}
+}
+
+/* Ensure both images appear on larger screens */
+@media (min-width: 769px) {
+  .small {
+      display: inline-block;
+  }
 }
 
 .feature-one-wrapper {
