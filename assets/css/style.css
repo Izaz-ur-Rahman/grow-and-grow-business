@@ -18536,6 +18536,10 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   .banner-three.banner-four .shape {
     display: none;
   }
+  .banner-one .swiper-wrapper .swiper-slide.three {
+    background-image: url(../images/hero_img.png);
+    background-size:cover;
+  }
 }
 .banner-three.banner-four .shape::after {
   position: absolute;
@@ -24776,9 +24780,11 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape1 {
     width: 40px;
     top: 0;
-    right: 30%;
+    right: 0%;
   }
 }
+
+
 @media (max-width: 500px) {
   .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape1 {
     width: 40px;
