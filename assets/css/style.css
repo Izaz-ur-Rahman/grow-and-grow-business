@@ -24789,6 +24789,9 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape1 {
     width: 40px;
   }
+  .business-goal-one img{
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .rts-business-solution5 .container .rts-business-solution-left .thumbnail .shape1 {
