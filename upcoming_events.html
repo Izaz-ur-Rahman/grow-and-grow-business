@@ -15,7 +15,38 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
 
-
+.rts-title-area.contact-fluid::after {
+    content: "Upcoming Events";
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: -1;
+    height: 109px;
+    top: -40%;
+    min-width: max-content;
+}
+.rts-title-area::after {
+    position: absolute;
+    content: "About Us";
+    left: -14%;
+    top: -70%;
+    color: #ffffff;
+    background-color: #000;
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px transparent;
+    font-size: 100px;
+    height: 100%;
+    max-width: max-content;
+    max-height: 162px;
+    font-weight: 900;
+    z-index: -1;
+    display: flex
+;
+    align-items: center;
+    opacity: 0.35;
+    font-family: var(--font-secondary);
+    height: 150px;
+}
 @media (min-width: 768px) {
   .event-card {
     flex-direction: row;
@@ -92,7 +123,10 @@
             .banner-one-inner .title span {
                 font-size: 36px;
             }
-
+.sevenrem{
+    padding-left:7rem;
+    color:#D7282F;
+}
         @media only screen and (max-width: 967px) {
             .banner-one-inner {
                 width: 90%;
@@ -328,16 +362,10 @@
     <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Contact Us</h1>
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title text-center">Events</h1>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="index.html">Home</a>
-                        <span> / </span>
-                        <a href="#" class="active">Contact Us</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -347,25 +375,170 @@
             <div class="row">
                 <div class="col-12">
                     <div class="rts-contact-fluid rts-section-gap">
-                        <div class="rts-title-area contact-fluid text-center mb--50">
-                            <p class="pre-title">
-                                Get In Touch
-                            </p>
-                            <h2 class="title">Needs Help? Let’s Get in Touch</h2>
+                        <div class="rts-title-area contact-fluid text-left mb--50 ">
+
+                            <h2 class="title sevenrem">Upcoming Events</h2>
                         </div>
-                        <div class="form-wrapper">
-                            <div id="form-messages"></div>
-                            <form id="contact-form" action="mailer.php" method="post">
-                                <div class="name-email">
-                                    <input type="text" name="name" placeholder="Your Name" required>
-                                    <input type="email" name="email" placeholder="Email Address" required>
+                        <div class="rts-tab-style-one">
+                            <div class="d-flex align-items-start contoler-company">
+                                <div class="nav flex-column nav-pills me-3 button-area" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">01. Information Technology</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">02. Hospitality</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">03. Logistics & Services</button>
+                                    <button class="nav-link" id="v-pills-manufacture-tab" data-bs-toggle="pill" data-bs-target="#v-pills-manufacture" type="button" role="tab" aria-controls="v-pills-manufacture" aria-selected="false">04. Manufacturing</button>
+                                    <button class="nav-link" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">05. Education</button>
+                                    <button class="nav-link" id="v-pills-customer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-customer" type="button" role="tab" aria-controls="v-pills-customer" aria-selected="false">06. Customer Self-Service</button>
                                 </div>
-                                <input type="text" name="subject" placeholder="Your Subject">
-                                <textarea placeholder="Type Your Message" name="message"></textarea>
-                                <button type="submit" class="rts-btn btn-primary">Send Message</button>
-                            </form>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/info.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/hospitality-1.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/logistics.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-manufacture" role="tabpanel" aria-labelledby="v-pills-manufacture-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/steel-factory.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-education" role="tabpanel" aria-labelledby="v-pills-education-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/education.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-customer" role="tabpanel" aria-labelledby="v-pills-customer-tab">
+                                        <!-- start tab content -->
+                                        <div class="rts-tab-content-one">
+                                            <p><img src="assets/images/faq/customer.webp" alt="image"></p>
+                                            <p class="disc">
+                                                Massa laoreet lacinia placerat eleifend cs curae imperdiet mattis
+                                                taciti, scelerisque elementum velit ullamcorper praesent enim temp
+                                            </p>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Ultricies tellus cubilia at rutrum lobortis dui quis aliquam
+                                                </p>
+                                            </div>
+                                            <div class="check-area">
+                                                <i class="fas fa-check-circle"></i>
+                                                <p class="disc">
+                                                    Eu nisi quam senectus odio commodo quam pellente
+                                                </p>
+                                            </div>
+                                            <a class="rts-btn btn-primary-2 color-h-black" href="#">Contact Us</a>
+                                        </div>
+                                        <!-- start tab content End -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
