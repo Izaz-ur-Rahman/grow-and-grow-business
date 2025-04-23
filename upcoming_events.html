@@ -156,10 +156,16 @@
 }
 
 @media (max-width: 768px) {
-  .icon-tab {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
+    .icon-tab {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        padding: 10px;
+
+    }
+  .mbltab{
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 .rts-tab-style-one .button-area{
@@ -171,7 +177,15 @@
 .left-btn {
     display: inline-block !important;
     margin-left: 0;
+    color: #000 !important;
+    background-color: #FFECEC !important;
+    margin-top: 0 !important;
 }
+.left-btn:hover{
+    background-color: #D7282F !important;
+    color:#fff !important;
+}
+
 
   </style>
 </head>
@@ -410,7 +424,7 @@
                         </div>
                         <div class="rts-tab-style-one px-5">
                             <div class="d-flex align-items-start contoler-company">
-                                <div class="nav flex-column nav-pills me-3 button-area" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <div class="nav flex-column nav-pills me-3 button-area mbltab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <button class="" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                         <img src="assets/images/icon/menu.png" class="icon-tab px-1" alt="IT Icon" />
                                         Virtual
@@ -429,7 +443,7 @@
                                       </button>  <button class=""   type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                         <img src="assets/images/icon/menu.png" class="icon-tab px-1" alt="IT Icon" />
                                         English,Urdu
-                                      </button>  <button class="text-black"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                      </button>  <button class="text-black"  id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"  type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                         <img src="assets/images/icon/menu.png" class="icon-tab px-1" alt="IT Icon" />
                                      Online
                                       </button>  <button class=""type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
@@ -449,7 +463,7 @@
                                     </p>
 
 
-                                        <a class="rts-btn btn-primary-2 color-h-black left-btn" href="#">Register For Event</a>
+                                        <a class="rts-btn btn-primary-2  left-btn" href="#">Register For Event</a>
 
                                 </div>
 
