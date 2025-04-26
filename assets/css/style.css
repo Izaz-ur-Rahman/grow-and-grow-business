@@ -27688,6 +27688,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 .team-style-ten:hover .social-team-10 {
   bottom: 0;
+
 }
 
 .social-team-10 {
@@ -27703,7 +27704,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #315ACA;
+  background: #DF0A0A;
   padding: 15px 0;
   bottom: -39%;
   transition: 0.5s;
@@ -27718,12 +27719,12 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   justify-content: center;
 }
 .social-team-10 li a i {
-  color: var(--color-primary-2);
+  color: #DF0A0A !important;
   font-family: "Font Awesome 5 Brands";
 }
 .social-team-10 li a i::before {
   font-family: "Font Awesome 5 Brands";
-  color: var(--color-primary-2);
+  color: #DF0A0A !important;
 }
 
 .home-ten .title-area-client::before {
