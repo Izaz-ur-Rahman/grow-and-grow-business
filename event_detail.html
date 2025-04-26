@@ -1,3 +1,380 @@
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+<link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+<link rel="stylesheet" href="assets/css/plugins/fontawesome-5.css">
+<link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+<link rel="stylesheet" href="assets/css/plugins/unicons.css">
+<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+    .event-gallery-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.header-main-one .thumbnail a {
+            padding: 10px 0 !important;
+
+         }
+
+        .main-header .button-area {
+             margin-left: 15px;
+        }
+        .main-header .nav-main ul li {
+             margin-right: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+             color: #4d5858;
+        }
+        .main-header .nav-main ul li a {
+             color: #4d5858;
+         }
+
+        .bg-1 {
+            background: #d7282f;
+        }
+
+        .banner-one-inner .title span {
+            color: #d7282f;
+        }
+
+        .about-success-wrapper .single i {
+             background: #f7d0d0;
+             color: #df0a0a;
+         }
+
+        .about-one-thumbnail .experience {
+            background: #d7282f;
+         }
+
+        .cta-one-bg {
+             background-color: #c315159e;
+         }
+        .rts-btn.btn-primary {
+            background: #d7282f;
+        }
+        .rts-btn.btn-primary-2 {
+            background: #d7282f;
+            color: #fff;
+        }
+
+        .banner-one-inner .title {
+             line-height: 45px;
+            margin-bottom: 23px;
+            font-size: 60px;
+        }
+
+        h4.title {
+            font-size: 34px !important;
+        }
+
+        .banner-one-inner {
+            width: 57%;
+             padding: 160px 195px 190px 3px;
+            position: relative;
+        }
+            .banner-one-inner .title span {
+                font-size: 36px;
+            }
+
+        @media only screen and (max-width: 967px) {
+            .banner-one-inner {
+                width: 90%;
+                padding: 160px 0 190px 3px;
+            }
+        }
+        @media (min-width: 576px) {
+    .col-smm-12 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 66%;
+    }
+}
+}
+
+</style>
+<header class="header--sticky header-one ">
+    <div class="header-main-one bg-white">
+        <div class="container">
+            <div class="row" >
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                    <div class="thumbnail ">
+                        <a href="index.html">
+                            <!--<img src="assets/images/logo/logo-1.svg" alt="finbiz-logo">-->
+                            <img class="desktop-logo" src="assets/images/logo/Website-Logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-smm-12 col-9">
+                    <div class="main-header">
+                        <nav class="nav-main mainmenu-nav d-none d-xl-block">
+                            <ul class="mainmenu">
+                                <li>
+                                    <a class="nav-item" href="index.html">Home</a>
+                                </li>
+
+                                <li class="has-droupdown">
+                                    <a class="nav-link" href="#">Membership </a>
+
+                                </li>
+                                <li class="has-droupdown">
+                                    <a class="nav-link" href="#">Events </a>
+                                    <ul class="submenu">
+                                        <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                                        <li><a href="events_gallery.html">Events Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-droupdown">
+                                    <a class="nav-link" href="#">Stories </a>
+
+                                </li>
+                                <li class="has-droupdown">
+                                    <a class="nav-link" href="#">Resources </a>
+
+                                </li>
+                                <li><a class="nav-item" href="#">Sponsorship </a></li>
+                             </ul>
+                        </nav>
+                        <div class="button-area">
+                            <!-- <button id="search" class="rts-btn btn-primary-alta"><i class="far fa-search"></i></button> -->
+                            <a href="contactus.html" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Member Login </a>
+                            <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
+                                <img class="menu-dark" src="assets/images/icon/menu.png" alt="Menu-icon">
+                                <img class="menu-light" src="assets/images/icon/menu-light.png" alt="Menu-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End header area -->
+
+<div id="side-bar" class="side-bar">
+    <button class="close-icon-menu"><i class="far fa-times"></i></button>
+    <!-- inner menu area desktop start -->
+    <div class="rts-sidebar-menu-desktop">
+        <a class="logo-1" href="index.html"><img class="logo" src="assets/images/logo/Website-Logo.png" alt="logo"></a>
+
+        <div class="body d-none d-xl-block">
+            <p class="disc">
+                We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+            </p>
+            <div class="get-in-touch">
+                <!-- title -->
+                <div class="h6 title">Get In Touch</div>
+                <!-- title End -->
+                <div class="wrapper">
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="#">+8801234566789</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">example@gmail.com</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-globe"></i>
+                        <a href="#">www.webexample.com</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="#">13/A, New Pro State, NYC</a>
+                    </div>
+                    <!-- single ENd -->
+                </div>
+                <div class="social-wrapper-two menu">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <div class="body-mobile d-block d-xl-none">
+            <nav class="nav-main mainmenu-nav">
+                <ul class="mainmenu">
+                    <li class="has-droupdown menu-item">
+                        <a class="menu-link" href="#">Home</a>
+                        <ul class="submenu">
+                            <li>
+                                <ul>
+                                    <a href="#0" class="tag">Homepages</a>
+                                    <li class="mobile-menu-link"><a href="index.html">Main Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-two.html">Consulting Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-three.html">Corporate Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-four.html">Insurance Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-five.html">Marketing Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-six.html">Finance Home</a></li>
+                                    <li class="mobile-menu-link"><a href="index-seven.html">Human Resources</a></li>
+                                    <li class="mobile-menu-link"><a href="index-eight.html">IT Solutions</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-nine.html">Modern Agency</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-ten.html">Startup Agency</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-eleven.html">Branding-Agency</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <a href="#0" class="tag">Onepages</a>
+                                    <li class="mobile-menu-link"><a href="onepage-one.html">Main Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-two.html">Consulting Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-three.html">Corporate Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-four.html">Insurance Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-five.html">Marketing Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-six.html">Finance Home Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-seven.html">Human Resources Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-eight.html">IT Solutions Onepage</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-nine.html">Modern Agency</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-ten.html">Startup Agency</a></li>
+                                    <li class="mobile-menu-link"><a href="onepage-eleven.html">Branding-Agency</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="menu-link" href="about-us.html">About Us</a></li>
+                    <li class="has-droupdown menu-item">
+                        <a class="menu-link" href="#">Services</a>
+                        <ul class="submenu">
+                            <li class="has-droupdown sub-droupdown">
+                                <a href="#">Our Service</a>
+                                <ul class="submenu third-lvl mobile-menu">
+                                    <li><a href="our-service.html">Service 1</a></li>
+                                    <li><a href="service-2.html">Service 2</a></li>
+                                    <li><a href="service-3.html">Service 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu-link"><a href="service-details.html">Service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-droupdown menu-item">
+                        <a class="menu-link" href="#">Pages</a>
+                        <ul class="submenu">
+                            <li class="mobile-menu-link"><a href="project.html">Project</a></li>
+                            <li class="mobile-menu-link"><a href="project-details.html">Project Details</a></li>
+                            <li class="mobile-menu-link"><a href="team.html">Team</a></li>
+                            <li class="mobile-menu-link"><a href="team-details.html">Team Details</a></li>
+                            <li class="mobile-menu-link"><a href="appoinment.html">appoinment</a></li>
+                            <li class="mobile-menu-link"><a href="price-plan.html">Price Plan</a></li>
+                            <li class="mobile-menu-link"><a href="404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-droupdown menu-item">
+                        <a class="menu-link" href="#">Blog</a>
+                        <ul class="submenu">
+                            <li class="mobile-menu-link"><a href="blog-list.html">Blog List</a></li>
+                            <li class="mobile-menu-link"><a href="blog-grid.html">Blog Grid</a></li>
+                            <li class="mobile-menu-link"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item"><a class="menu-link" href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-wrapper-two menu mobile-menu">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+            </div>
+            <a href="#" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Get Quote</a>
+        </div>
+    </div>
+    <!-- inner menu area desktop End -->
+</div>
+
+<div class="search-input-area">
+    <div class="container">
+        <div class="search-input-inner">
+            <div class="input-div">
+                <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
+                <button><i class="far fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+</div>
+  <!-- start breadcrumb area -->
+  <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+    <div class="container">
+        <div class="row align-items-center ">
+            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                <h1 class="title text-center"> Event Gallery</h1>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end breadcrumb area -->
+
 <div class="rts-service-details-area rts-section-gap">
     <div class="container">
         <div class="row">
